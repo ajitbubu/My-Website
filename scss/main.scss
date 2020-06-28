@@ -1,0 +1,39 @@
+//variables
+$primary: #401f7c;
+$secondary: #f1f1f1;
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+//Utility
+$utilities: () !default;
+$utilities: map-merge(
+    (
+        'input-padding':
+        (
+            property: padding,
+            class: ip,
+            values: (0: 0,
+                1: 0.3rem,
+                2: 0.5rem,
+                3: 0.7rem,
+                4: 0.9rem,
+                5: 1rem,
+                6: 1.2rem,
+            ),
+        ),
+        "flex-grow":
+        (
+            responsive: true,
+            property: flex-grow,
+            class: flex,
+            values: (grow-0: 0,
+                grow-1: 1,
+            )
+        ),
+    ),
+    $utilities
+    );
+
+@import "style";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

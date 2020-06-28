@@ -1,5 +1,5 @@
 {
-  "name": "BS5",
+  "name": "my-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.0.0-alpha1",
+    "bootstrap-icons": "^1.0.0-alpha5",
     "partials": "^0.1.0",
     "popper.js": "^1.16.1"
   }
