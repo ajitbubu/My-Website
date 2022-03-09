@@ -2,14 +2,9 @@
 <html>
 <head>
 	<title>Ajit Sahu</title>
-
-
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
-
 	<link rel="stylesheet" type="text/css" href="default.css">
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
@@ -116,9 +111,9 @@
 					<img id="social_img" src="images/follow.jpg">
 					<h3>Find me on Twitter & Youtube</h3>
 
-					<a target="_blank" href="https://www.youtube.com/c/dennisivy">YouTube: @DennisIvy</a>
+					<a target="_blank" href="https://www.youtube.com/channel/UCjvUuAcCKUK8r3hZwFEh4iA">YouTube: @Ajit</a>
 					<br>
-					<a target="_blank" href="https://twitter.com/dennisivy11">Twitter: @DennisIvy11</a>
+					<a target="_blank" href="https://www.linkedin.com/in/ajit-kumar-sahu-07977a23/">linkedin: @ajit-kumar-sahu</a>
 				</div>
 			</div>
 
@@ -172,26 +167,27 @@
 		<div class="main-container">
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
-
-			<form id="contact-form">
+			<div class="alert">Your message has been sent</div>
+			<form id="contactForm">
 				<a name="contact"></a>
 
 				<label>Name</label>
-				<input class="input-field" type="text" name="name">
-
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
+				<input type="text" name="name" class="input-field" id="name" required placeholder="Your name here">
+				
+				<label>Phone Number</label>
+				<input type="tel" name="phone" id="phone" class="input-field" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
 
 				<label>Email</label>
-				<input class="input-field" type="text" name="email">
+				<input type="email" class="input-field" name="email" id="email" required placeholder="test@test.com">
 
 				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
-
-				<input id="submit-btn" type="submit" value="Send">
+				<textarea class="input-field" name="message" id="message" placeholder="Your message.."></textarea>
+				
+				<button id="submit-btn" type="submit">Submit</button>
 			</form>
 		</div>
 	</section> 
+	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase.js"></script>
 
 	<script type="text/javascript" src="script.js"></script>
 </body>
